@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0F2027;
+}
+
+h1, a{
+    font-family: 'Abel', sans-serif;
+    color: #fff;
+    font-size: 45px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: -100px;
+    display: block;
+    transition: top 0.6s;
+    z-index: 999;
+}
+.logo{
+    position: absolute;
+}
+
+nav h1{
+    margin: 10px 0 0 110px;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+}
+
+#links{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 25px 30px 0 0;
+    font-size: 35px;
+}
+
+.fat-img{
+    background-color:#000; 
+    width:100%; 
+    height:auto;  
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.technik{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.technik h1,
+.technik p{
+margin: 20px 30px 0 40px;
+max-width: 100%;
+}
+
+.technik h1{
+    margin-top: 100px;
+}
+#vid{
+    display:flex;justify-content:center;align-items:center;
+    height: 1200px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+iframe{
+    width: 90%;
+    height: 980px;
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt{
+    display: flex;
+    justify-content: flex-start;
+    height: 500px;
+}
+
+.text{
+    margin: 66px 20px 0 40px;
+    max-width: 70%;
+}
+
+.text p{
+    margin-top: 20px;
+}
+
+.footer{
+    height: 200px;
+    width: 100%;
+    background: rgb(10, 21, 26);
+    color: #fff;
+    position: absolute;
+}
+
+.social-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.footer h1{
+    text-decoration: none;
+    position: absolute;
+    margin: 0 0 0 40px;
+}
+
+.footer a{
+    margin: 0px 30px 0 30px;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #fff;
+}
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
