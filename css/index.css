@@ -96,8 +96,6 @@ nav a:hover{
 #vid{
     display:flex;justify-content:center;align-items:center;
     height: 1200px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
 }
 
 iframe{
@@ -150,6 +148,11 @@ iframe{
     font-size: 100%;
 }
 
+.werbung{
+    font-size: 30px;
+    margin: 0 0 20px 20px;
+    text-decoration: none;
+}
 
 *,
 *::before,
@@ -163,7 +166,7 @@ iframe{
 }
 
 .heading {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: 'Abel', sans-serif;
 	font-size: 4rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -178,14 +181,11 @@ iframe{
 .gallery {
     display: flex;
 	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
 }
 
 .gallery-item {
-    /* Minimum width of 24rem and grow to fit available space */
 	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
@@ -204,13 +204,9 @@ iframe{
     transform: scale(1.15);
 }
 
-/*
 
-The following rule will only run if your browser supports CSS grid.
 
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
 
-*/
 
 @supports (display: grid) {
     .gallery {
