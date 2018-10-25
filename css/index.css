@@ -1,3 +1,12 @@
+@media only screen and (max-width: 600px) {
+    .technik {
+        height: 800px;
+    }
+
+    .fat-img{
+        display: none;
+    }
+}
 
 
 
@@ -204,14 +213,4 @@ Remove or comment-out the code block below to see how the browser will fall-back
 	.gallery-item {
 		margin: 0;
 	}
-}
-
-@media only screen and (max-width: 600px) {
-    .technik {
-        height: 800px;
-    }
-
-    .fat-img{
-        display: none;
-    }
 }
