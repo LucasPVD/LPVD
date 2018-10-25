@@ -228,14 +228,18 @@ Remove or comment-out the code block below to see how the browser will fall-back
 @media only screen and (max-width: 1100px) {
   
 
-    .technik h1{
+    .technik h1, .text{
         margin-top: 20px;
     }
 
-    .technik{
-        height: 
+    iframe{
+        height: 500px;
     }
-   
+
+    #vid{
+        height: 800px;
+    }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -248,6 +252,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
     nav a{
         margin-top: 35px;
     }
+
+    iframe{
+        height: 350px;
+    }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -261,6 +270,19 @@ Remove or comment-out the code block below to see how the browser will fall-back
         margin-top: 23px;
     }
 
+    .technik h1{
+        padding-top: 
+    }
+
+    iframe{
+        height: 350px;
+    }
+    iframe{
+        height: 300px;
+    }
+    #vid{
+        height: 450px;
+    }
 }
 
 @media only screen and (max-width: 670px) {
@@ -272,6 +294,15 @@ Remove or comment-out the code block below to see how the browser will fall-back
     nav h1{
         margin-left: 40%;
     }
+
+    iframe{
+        height: 280px;
+    }
+
+    #vid{
+        height: 400px;
+    }
+
 }
 
 
