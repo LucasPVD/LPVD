@@ -1,3 +1,14 @@
+
+
+
+.fat-img{
+    background-color:#000; 
+    width:100%; 
+    height:auto;  
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
 *{
     margin: 0;
     padding: 0;
@@ -54,14 +65,6 @@ nav a{
     font-size: 35px;
 }
 
-.fat-img{
-    background-color:#000; 
-    width:100%; 
-    height:auto;  
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
 
 .technik{
     display: flex;
@@ -95,7 +98,7 @@ iframe{
 .kontakt{
     display: flex;
     justify-content: flex-start;
-    height: 500px;
+    height: 600px;
 }
 
 .text{
@@ -112,7 +115,6 @@ iframe{
     width: 100%;
     background: rgb(10, 21, 26);
     color: #fff;
-    position: absolute;
 }
 
 .social-btn{
@@ -202,4 +204,14 @@ Remove or comment-out the code block below to see how the browser will fall-back
 	.gallery-item {
 		margin: 0;
 	}
+}
+
+@media only screen and (max-width: 600px) {
+    .technik {
+        height: 800px;
+    }
+
+    .fat-img{
+        display: none;
+    }
 }
