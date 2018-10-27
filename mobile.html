@@ -10,11 +10,50 @@
   </head>
   <body>
 
-<nav>
+    <header>
+      <div class='menu'>
+      <button class="menu-button" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+       </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <a href='#home' class="nav-item"><li>Home</li></a>
+          <a href='#technik' class="nav-item"><li>Technik</li></a>
+          <a href='#projekte' class="nav-item"><li>Projekte</li></a>
+          <a href='#kontakt' class="nav-item"><li>Kontakt</li></a>
 
-</nav>
+        </ul>
+      </nav>
+    </div>
+      <p>Lucas P.<br>Visual Design</div></p>
+      <img src='img/logo.png' alt='logo'>
+    </header>
 
-<img src='img/lpvd.png' alt='Logo'>
+    <div class='fat-img'>
+      <img src='img/phone_klamm.jpg'>
+    </div>
 
+    <div id='technik' class='technik'>
+
+      <h1>Wie produziere ich Videos?</h1>
+      <p>Angefangen von den professionellen Kameras, wie zum Beispiel der "DJI OSMO Pro", bis hin zu Aufnahmen mit Drohnen Equipment.
+        Mithilfe verschiedenster Techniken entstehen Werbevideos, Event Videos (Hochzeiten, Eröffnungen, usw.), oder auch simple Youtube Videos.</p>
+    
+      <img src='img/drohne.jpg' alt='Drohne'>
+    </div>
+
+
+      <script>
+        const menuButton = document.querySelector(".menu-button")
+        const nav = document.querySelector(".nav")
+
+        menuButton.addEventListener("click", () => {
+        menuButton.classList.toggle("menu-button--open")
+        nav.classList.toggle("nav--open")
+        })
+</script>
   </body>
 </html>
