@@ -192,8 +192,13 @@ iframe{
   height: 150px
 }
 
+.footer{
+  background: rgb(10, 21, 26);
+}
+
 footer h1{
-  padding-top: 30px;
+  margin-top: 25px;
+  padding-top: 5px;
   text-align: center;
 }
 
