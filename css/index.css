@@ -154,6 +154,11 @@ iframe{
     text-decoration: none;
 }
 
+#werbung{
+    background-color: #0F2027;
+    width: 100vw;
+}
+
 *,
 *::before,
 *::after {
@@ -266,9 +271,6 @@ iframe{
         margin-top: 23px;
     }
 
-    .technik h1{
-        padding-top: 
-    }
 
     iframe{
         height: 350px;
