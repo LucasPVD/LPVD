@@ -17,6 +17,11 @@
 
 body{
     background: #0F2027;
+    cursor: default;
+}
+
+a{
+    cursor: pointer;
 }
 
 h1, a{
@@ -72,6 +77,7 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     height: 500px;
+    cursor: default;
 }
 
 .technik h1,
@@ -106,6 +112,7 @@ iframe{
     display: flex;
     justify-content: flex-start;
     height: 600px;
+    cursor: default;
 }
 
 .text{
@@ -172,7 +179,8 @@ iframe{
 	font-weight: 500;
 	line-height: 1.5;
 	text-align: center;
-	padding: 3.5rem 0;
+    padding: 3.5rem 0;
+    cursor: default;
 }
 .heading span {
     display: block;
@@ -309,4 +317,32 @@ iframe{
     h1{
         font-size: 40px;
     }
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
