@@ -1,0 +1,29 @@
+*{
+    font-family: 'Raleway';
+}
+
+h2, h3{
+    font-family: 'Abel';
+}
+
+article{
+    margin: 100px auto 0 auto;
+    width: 960px;
+    background-color: rgb(25, 53, 65);
+    padding: 0 0 50px 0;
+}
+
+article h1{
+    text-align: center;
+}
+
+.short{
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+.description{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
