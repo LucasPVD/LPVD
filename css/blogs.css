@@ -27,3 +27,67 @@ article h1{
     display: flex;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 960px) {
+
+    article{
+        width: 767px;
+    }
+
+    article img{
+        width: 767px;
+        height: 431px;
+    }
+
+    .description{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    
+    article{
+        width: 479px;
+    }
+
+    article img{
+        width: 479px;
+        height: 269px;
+    }
+
+    .description{
+        font-weight: lighter;
+        font-size: 15px;
+        display: block;
+        padding: 10px 0 0 20px;
+    }
+}
+
+
+    
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    
+    article{
+        width: 100%;
+    }
+
+    article img{
+        width: 100%;
+        height: auto;
+    }
+
+    article h1{
+        font-size: 25px;
+    }
+
+    .short{
+        font-size: 15px;
+    }
+
+    .description{
+        font-size: 13px;
+    }
+}

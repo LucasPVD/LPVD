@@ -346,3 +346,32 @@ iframe{
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.names{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    
+    .social-btn{
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+
+    .social-btn a{
+        display: block;
+        padding-bottom: 20px;
+
+    }
+
+    .names{
+        padding-top: 40px;
+        display: block;
+    }
+}
