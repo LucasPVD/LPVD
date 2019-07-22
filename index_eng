@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LPVD</title>
+    <script>
+            if (/Android|webOS|iPod|iphone|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+              window.location = 'mobile.html'
+            }
+    </script>
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+  </head>
+  <body class='body'>
+  
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+                ScrollReveal().reveal('.body', { delay: 1000});
+                </script>
+ 
+    <nav id='navbar'>
+        <img src='img/web_new_logo_small.png' alt='Logo' height='100px' width='100px' class='logo'>
+        <h1>Lucas P.<br>Visual Design</h1>
+
+        <div id='links'>
+            <a href='#home'>Home</a>
+            <a href='#technik'>Technik</a>
+            <a href='#projekte'>Projekte</a>
+            <a href='#kontakt'>Kontakt</a>
+        </div>
+    </nav>
+
+    <div id='home'>
+        <img src='img/banner_fireeyes.jpg' class='fat-img'>
+    </div>
+    <div id='technik' style='padding-bottom: 40px;'></div>
+    <div class='technik'>
+        <div>
+        <h1>Wie produziere ich Videos?</h1>
+        <p>Mithilfe von professionellen Kameras, sowie Drohne, realisiere ich fast jede Vorstellung.
+Von der Entwicklung der Idee, bis hin zur Fertigstellung des Videos und Abgabe des Produkts, habe ich immer ein offenes Ohr für meine Kunden und versuche bestmöglichst jeden Wunsch zu erfüllen.</p>
+        </div>
+        <img src='img/equip2.jpg'>
+    </div>
+<div id='projekte' style='padding-bottom: 40px;'></div>
+    <div class="container">
+            <h1 class="heading" class="underline">Meine Projekte</h1>
+        
+            <div class="gallery">
+          
+                <div class="gallery-item">
+                    <a href='https://www.youtube.com/watch?v=bSv6eTHxJtU&t' target='_blank'><img class="gallery-image" src="img/webefilm.jpg"></a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a hboy.jpgref='https://www.youtube.com/watch?v=l3weTD_K2WA' target='_blank'><img class="gallery-image" src="img/weihnachten.jpg"></a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href='https://www.youtube.com/watch?v=cO_0ztF0Jds' target='_blank'><img class="gallery-image" src="img/web_broken_violin.jpg"></a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href='https://www.youtube.com/watch?v=wMU0MKlV0zI' target='_blank'><img class="gallery-image" src="img/cinematic.jpg"></a>
+                </div>
+                
+                <div class="gallery-item">
+                    <a href='https://www.youtube.com/watch?v=gaIuZO5LcHE' target='_blank'><img class="gallery-image" src="img/konzertaufnahme.jpg"></a>
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/hochzeit.jpg">
+                </div>
+            </div>
+        
+        </div>
+
+    <div id='vid'>
+    <iframe src="https://www.youtube.com/embed/FA9HpiWDwyo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class='vid'></iframe>
+    </div>
+
+    <div id='kontakt' class='kontakt'>
+        <img src='img/lucas.jpg' alt='LPVD' height='500px' width='500px'>
+        <div class='text'>
+        <h1>Das bin ich</h1>
+        <p>Da ich bereits in jungen Jahren Interesse an Grafikdesign und Videoproduktionen hatte, beschäftige ich mich schon nun seit 6 Jahren mit diesen Bereichen. <br> Ich bin 18 Jahre alt und besuche derzeit die HBLW Saalfelden im Zweig Kommunikations- und Mediendesign, in welchem mein Interesse am Filmen und Co, weiter vertieft und gefördert wird. <br>  Mir liegt es sehr am Herzen das Bestmögliche aus meinen Produkten herauszuholen. Keine Herausforderung ist mir zu groß, auch wenn das heißt dabei vorne in der Schaufel eines fahrenden Traktors mit Kamera und Gimbal zu sitzen und einen Downhiller zu filmen.</p>
+        <p>lucaspvisualdesign@gmail.com</p>
+        <p>+43 664 75041108</p>
+        </div>
+    </div>
+    <div id='werbung'>
+    <a href='https://www.instagram.com/instamathos/' target="_blank" class='werbung'>Website by Thomas Beihammer</a>
+    </div>
+    <div class='footer'>
+        <div class='social-btn'>
+            <a href='https://www.instagram.com/lucas._.p_/' target="_blank" ><img src='img/instagram.svg' height='100px' width='100px' alt='Instagram'></a><p class='names'>Instagram</p>
+            <a href='https://www.youtube.com/channel/UCEqk51_YlULUmGfTc87W-fw' target="_blank" ><img src='img/youtube.svg' height='100px' width='100px' alt='Youtube'></a><p class='names'>Youtube</p>
+            <a href='https://www.facebook.com/LPVDYT' target="_blank" ><img src='img/facebook.svg' height='100px' width='100px' alt='Facebook'></a><p class='names'>Facebook</p>
+        </div>
+    </div>
+        
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-100px";
+          }
+        }
+    </script>
+  </body>
+</html>
